@@ -1,8 +1,5 @@
 import random
 import sys
-import nmap
-
-nmap.PortScanner
 
 
 names = ["Lebron", "Durant", "Curry", "Giannis", "Doncic"]
