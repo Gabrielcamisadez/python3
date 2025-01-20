@@ -1,6 +1,6 @@
 import socket
-dominio = "dominio.com"
-nomes = ["www", "ftp", "mail", "pop", "smtp", "webmail"]
+dominio = "http://sigapep.saude.prefeitura.sp.gov.br"
+nomes = ["ns1", "www", "ftp", "mail", "pop", "smtp", "webmail", "ns2", "ns3"]
 
 for nome in nomes:
     DNS = nome + "." + dominio
