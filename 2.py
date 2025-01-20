@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 
 import requests
+from bs4 import BeautifulSoup
+
+
 
 URL = "http://localhost/login.php"
 
@@ -9,8 +12,11 @@ USERNAME_WORDLIST = "./username_wordlist.txt"
 
 def check():
     r1 = requests.get(URL)
-    print(r1)
-    
+    headers = r1.headers
+    cookie = headers["Set-Cookie"]
+    print(cookie)
+    soup = BeautifulSoup(r1.text, 'html.parser')
+    token = soup.find("input", {"name": "user_token"})["value"]
     
 
 
