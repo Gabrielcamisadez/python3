@@ -1,4 +1,4 @@
-#               Lamba Functions Tips
+#               Lambda Functions Tips
 
 #     LIST :
 list1 = [10, 23, 52, 123, 43, 233, 8080]
